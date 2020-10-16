@@ -1,6 +1,6 @@
 
-
-$Aaaryofkb = @('KB4577064', 'KB4577051', 'KB4577066', 'KB4577015', 'KB4570333', ) \\ Replace the array with the list of Monthly Security Updates for each OS. See read me file.
+#Replace the array with the list of Monthly Security Updates for each OS. See read me file.
+$Aaaryofkb = @('KB4577064', 'KB4577051', 'KB4577066', 'KB4577015', 'KB4570333', )
 
 $HotfixInstaled = (Get-Hotfix | select HotFixID).HotFixID
 $Hotfixcompare = Compare-Object $Aaaryofkb ($HotfixInstaled)  -IncludeEqual 
